@@ -8,7 +8,7 @@ st.title("@MASK Speed Monitor")
 
 def get_speed():
     stt = speedtest.Speedtest(secure=True)
-    stt.get_servers(servernames)
+    stt.get_servers()
     ping=sst.results.ping
     download_speed = stt.download() / (1024**2)  # Convert to Mbps
     upload_speed = stt.upload() / (1024**2)  # Convert to Mbps
