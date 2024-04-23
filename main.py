@@ -10,7 +10,7 @@ def get_speed():
     stt = speedtest.Speedtest(secure=True)
     download_speed = stt.download() / (1024**2)  # Convert to Mbps
     upload_speed = stt.upload() / (1024**2)  # Convert to Mbps
-    return download_speed, upload_speed, ping
+    return download_speed, upload_speed
 
 download, upload = get_speed()
 
