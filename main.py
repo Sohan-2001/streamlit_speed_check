@@ -5,7 +5,7 @@ import speedtest
 # Initialize the speedtest-cli
 st.title("@MASK Speed Monitor")
 
-@st.cache
+
 def get_speed():
     stt = speedtest.Speedtest(secure=True)
     download_speed = stt.download() / (1024**2)  # Convert to Mbps
